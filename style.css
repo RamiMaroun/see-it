@@ -1,0 +1,372 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+#container{
+    width: 90%;
+    box-shadow: 7px 15px  15px 0 rgba(0,0,0,0.5);
+    height: auto;
+    margin: 50px auto 50px auto;
+}
+header{
+    background-color: #3b3f42;
+    color: white;
+}
+#logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#logo img{
+    width: 15%;
+    margin-right: 100px;
+    margin-top: 10px;
+}
+#logo h1{
+    margin-top: 50px;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 25px;
+}
+nav a {
+    text-decoration: none;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 10px;
+    color: white;
+}
+nav a:hover{
+    background-color: white;
+    color: black;
+}
+#show{
+    width: 100%;
+    background-image: url("images/1.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    animation-name: pictures;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+}
+@keyframes pictures {
+    0%   {background-image: url("images/1.jpg");}
+    25%  {background-image: url("images/2.jpg");}
+    75% {background-image: url("images/3.jpg");}
+    100% {background-image: url("images/4.jpg");}
+}
+#degrees{
+    display: flex;
+    flex-direction: column;
+}
+#degrees h2{
+    background-color: #3b3f42;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    font-size: 40px;
+    margin: 0;
+    width: auto;
+}
+.degree{
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    margin-right: auto;
+    margin-left: auto;
+    width: 85%;
+    padding: 15px;
+    color: #67625f;
+}
+.dropdown{
+    display: flex;
+    flex-direction: column;
+}
+.drop-list1{
+    display: none;
+    margin-left: 20px;
+}
+.drop-list2{
+    display: none;
+    margin-left: 20px;
+}
+.drop-list2 a{
+    text-transform: capitalize;
+    border-bottom: #e7e7e7 1px dotted;
+}
+.dropdown:hover .drop-list1{
+    display: flex;
+    flex-direction: column;
+}
+.drop-list1:hover .drop-list2{
+    display: flex;
+    flex-direction: column;
+}
+.title{
+    background-color: #e7e7e7;
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+}
+.title h3{
+    text-align: center;
+}
+.title img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    width: 10vw;
+}
+.explanation{
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #edeef0;
+}
+.explanation .content{
+    display: flex;
+    flex-direction: column;
+    margin-left: 30%;
+}
+.explanation .content p{
+    font-size: 18px;
+    font-weight: bold;
+}
+.explanation .content a{
+    padding: 12px;
+    color: #67625f;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 14px;
+}
+.content a:hover{
+    color: black;
+    font-weight: bold;
+}
+form{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.txt-tittle{
+    background-color: #3b3f42;
+    color: #e7e7e7;
+    width: 25%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.txt-tittle h2{
+    padding: 10px;
+}
+.field{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-row-gap: 20px;
+    text-align: right;
+    padding-right: 100px;
+    font-size: 16px;
+    text-transform: capitalize;
+    margin-bottom: 50px;
+}
+label{
+    padding: 15px;
+}
+.field input {
+    width: 150px;
+}
+.field select{
+    width: 158px;
+}
+.db select {
+    width: 50px;
+}
+input[type=button]{
+    padding: 10px;
+    border: none;
+    background-color: #3b3f42;
+    color: white;
+}
+.btn{
+    margin-left:auto;
+    margin-right: auto;
+}
+.login{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+}
+.login input{
+    height: 25px;
+}
+footer{
+    margin-top: 50px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: #3b3f42;
+    color: #e7e7e7;
+}
+footer .content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+footer .lang{
+    font-size: 16px;
+    margin-top: 20px;
+    text-align: center;
+}
+footer h3{
+    text-transform: uppercase;
+    text-align: center;
+}
+footer .logo img{
+    width: 85px;
+}
+footer .logo{
+    text-align: center;
+    padding-top: 0;
+}
+footer .contact img{
+    width: 30px;
+    padding: 5px;
+}
+
+@media(max-width: 750px) {
+    nav{
+        flex-direction: column;
+        margin-top: 25px;
+    }
+    nav a{
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 14px;
+    }
+    #logo img{
+        margin-left: 50px;
+    }
+    #logo h1{
+        font-size: 18px;
+        margin-right: 50px;
+    }
+    .field{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media (max-width: 605px) {
+    #logo img{
+        width: 100px;
+    }
+    #logo h1{
+        margin-right: 75px;
+    }
+}
+@media (max-width: 514px) {
+   footer .content{
+       flex-direction: column;
+   }
+    footer .logo{
+        margin-top: 25px;
+    }
+    footer .icons{
+        margin-left: 25%;
+    }
+    .degree{
+        flex-direction: column;
+    }
+    .title ,.explanation{
+        width: 100%;
+    }
+    .explanation .content{
+        margin-left: 20%;
+    }
+}
+@media(max-width: 450px) {
+    .field{
+        grid-template-columns: repeat(1,1fr);
+        padding-right: 50px;
+    }
+    label{
+        padding: 10px;
+        text-align: center;
+        font-size: 14px;
+    }
+}
+@media (max-width: 375px) {
+    #logo{
+        flex-direction: column;
+    }
+    #logo h1{
+        margin-top: 10px;
+        width: 85%;
+        text-align: center;
+        margin-left: 25px;
+    }
+    #logo img{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    footer .icons{
+        margin-left: 20%;
+    }
+    .icons a{
+        padding: 0;
+    }
+    .txt-tittle{
+        width: 60%;
+    }
+}
+@media (max-width: 250px) {
+    .explanation .content{
+        margin-left: 10%;
+    }
+    .explanation .content p{
+        font-size: 14px;
+    }
+    .explanation .content a{
+        font-size: 12px;
+    }
+}
+@media (max-width: 220px) {
+    #degrees h2 {
+        font-size: 25px;
+    }
+    .field input {
+        width: 100px;
+    }
+    .field select{
+        width: 100px;
+    }
+    .field{
+        font-size: 12px;
+        padding-right: 75px;
+    }
+    .login input{
+        width: 100px;
+    }
+}
+@media (max-width: 200px) {
+    footer .contact img{
+        width: 25px;
+        padding: 4px;
+    }
+    footer .icons{
+        margin-left: 10%;
+    }
+    .explanation .content a{
+       padding: 5px;
+        font-size: 10px;
+    }
+    #logo h1{
+        width: 85%;
+        margin-left: 10px;
+    }
+    nav a{
+        font-size: 12px;
+    }
+}
