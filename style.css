@@ -282,6 +282,17 @@ footer .contact img{
         margin-right: 0;
     }
 }
+@media (max-width: 541px) {
+   .explanation{
+       width: 65%;
+   }
+    .title{
+        width: 35%;
+    }
+    .title img{
+        width: 75px;
+    }
+}
 @media (max-width: 514px) {
    footer .content{
        flex-direction: column;
@@ -298,7 +309,6 @@ footer .contact img{
     .title ,.explanation{
         width: 100%;
     }
-
 }
 @media(max-width: 450px) {
     .field{
