@@ -244,15 +244,7 @@ footer .contact img{
     }
     nav a.main-1{
         font-size: 14px;
-        background-color: rgba(152, 146, 146, 0.5);
-        width: 100%;
-        color: #e7e7e7;
-        border-bottom: #3b3f42 1px dotted;
-        text-align: center;
-    }
-    nav a.main-1{
-        font-size: 14px;
-        background-color: rgba(152, 146, 146, 0.5);
+        background-color: rgba(0, 0, 0, 0.5);
         width: 100%;
         color: #e7e7e7;
         border-bottom: #3b3f42 1px dotted;
@@ -306,9 +298,7 @@ footer .contact img{
     .title ,.explanation{
         width: 100%;
     }
-    .explanation .content{
-        margin-left: 20%;
-    }
+
 }
 @media(max-width: 450px) {
     .field{
@@ -334,6 +324,18 @@ footer .contact img{
     #logo img{
         margin-left: auto;
         margin-right: auto;
+    }
+    #degrees h2{
+        font-size: 25px;
+    }
+    .explanation .content{
+        margin-left: 5%;
+    }
+    .explanation .content p{
+        font-size: 16px;
+    }
+    .explanation .content a{
+        font-size: 14px;
     }
 }
 @media (max-width: 376px) {
