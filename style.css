@@ -20,7 +20,7 @@ header{
     justify-content: space-around;
 }
 #logo img{
-    width: 15%;
+    width: 150px;
     margin-right: 100px;
     margin-top: 10px;
 }
@@ -287,7 +287,7 @@ footer .contact img{
         width: 100px;
     }
     #logo h1{
-        margin-right: 75px;
+        margin-right: 0;
     }
 }
 @media (max-width: 514px) {
@@ -321,7 +321,7 @@ footer .contact img{
         font-size: 14px;
     }
 }
-@media (max-width: 375px) {
+@media(max-width: 415px) {
     #logo{
         flex-direction: column;
     }
@@ -335,6 +335,9 @@ footer .contact img{
         margin-left: auto;
         margin-right: auto;
     }
+}
+@media (max-width: 376px) {
+
     footer .icons{
         margin-left: 20%;
     }
