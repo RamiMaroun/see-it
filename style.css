@@ -135,10 +135,6 @@ nav a:hover{
     flex-direction: column;
     margin-left: 30%;
 }
-.explanation .content p{
-    font-size: 18px;
-    font-weight: bold;
-}
 .explanation .content a{
     padding: 12px;
     color: #67625f;
@@ -342,15 +338,11 @@ footer .contact img{
     .explanation .content{
         margin-left: 5%;
     }
-    .explanation .content p{
-        font-size: 16px;
-    }
     .explanation .content a{
         font-size: 14px;
     }
 }
 @media (max-width: 376px) {
-
     footer .icons{
         margin-left: 20%;
     }
@@ -364,9 +356,6 @@ footer .contact img{
 @media (max-width: 250px) {
     .explanation .content{
         margin-left: 10%;
-    }
-    .explanation .content p{
-        font-size: 14px;
     }
     .explanation .content a{
         font-size: 12px;
