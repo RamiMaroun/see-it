@@ -171,7 +171,7 @@ form{
     text-transform: capitalize;
     margin-bottom: 50px;
 }
-label{
+ form label{
     padding: 15px;
 }
 .field input {
@@ -218,6 +218,13 @@ footer .lang{
     margin-top: 20px;
     text-align: center;
 }
+footer .lang select{
+    font-size: 16px;
+    font-family: sans-serif;
+    padding: 4px;
+    color: #3b3f42;
+    border: none;
+}
 footer h3{
     text-transform: uppercase;
     text-align: center;
@@ -232,6 +239,9 @@ footer .logo{
 footer .contact img{
     width: 30px;
     padding: 5px;
+}
+footer .lang select{
+    margin-left: 10px;
 }
 
 @media(max-width: 960px) {
@@ -312,7 +322,7 @@ footer .contact img{
         grid-template-columns: repeat(1,1fr);
         padding-right: 50px;
     }
-    label{
+   form  label{
         padding: 10px;
         text-align: center;
         font-size: 14px;
@@ -344,13 +354,23 @@ footer .contact img{
 }
 @media (max-width: 376px) {
     footer .icons{
-        margin-left: 20%;
+        margin-left: 30%;
     }
     .icons a{
         padding: 0;
     }
     .txt-tittle{
         width: 60%;
+    }
+    footer label{
+        display: flex;
+        flex-direction: column;
+    }
+    footer .lang select{
+        margin-top: 10px;
+        width: 150px;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 @media (max-width: 250px) {
@@ -377,6 +397,10 @@ footer .contact img{
     }
     .login input{
         width: 100px;
+    }
+    footer .lang select{
+        width: 100px;
+
     }
 }
 @media (max-width: 200px) {
